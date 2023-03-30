@@ -10,12 +10,10 @@
  */
 function calculate () {
   // input
-  let height = parseInt(document.getElementById('height-of-triangle').value);
-  let base = parseInt(document.getElementById('base-of-triangle').value);
-
+  let rise = parseFloat(document.getElementById('rise-of-line').value);
+  let run = parseFloat(document.getElementById('run-of-line').value);
   // process
-  let area = base / 2 * height;
-
+  let slope = rise/run;
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
+  document.getElementById('slope').innerHTML = 'Slope is: ' + slope.toFixed(2);
 }

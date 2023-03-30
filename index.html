@@ -28,19 +28,18 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Area and Perimeter, with JS</span>
+          <span class="mdl-layout-title">Slope of a Line Calculations</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <table>
           <tr>
             <th>
-              <img src="./images/formula.png" width="75%" height="auto"/>
+              <img src="./images/formula.jpg" width="75%" height="auto"/>
             </th>
             <th>
               <h2>Formula</h2>
               <h4> m = rise/run</h4>
-              <h4> m= (y₂-y₁)/(x₂-x₁)</h4> 
             </th>
           </tr>
         </table>
@@ -52,9 +51,9 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="height-of-triangle"
+              id="rise-of-line"
             />
-            <label class="mdl-textfield__label" for="height-of-triangle">Rise of Line ...</label>
+            <label class="mdl-textfield__label" for="rise-of-line">Rise of Line ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -67,13 +66,12 @@
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="base-of-triangle"
+              id="run-of-line"
             />
-            <label class="mdl-textfield__label" for="base-of-triangle">Run of Line ...</label>
+            <label class="mdl-textfield__label" for="run-of-line">Run of Line ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
-				
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
@@ -84,7 +82,7 @@
         <br />
         <p>
           <div id="answers">
-            <div id="area"></div>
+            <div id="slope"></div>
           </div>
         </p>
       </main>
